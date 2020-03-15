@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import NotFound from './pages/NotFound';
 
 import Home from './pages/Home'
-import Login from './components/login';
+import Login from './pages/Login';
 
 import MerchList from './components/merch-list'
 import CreateMerch from './components/create-merch';

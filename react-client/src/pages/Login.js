@@ -19,7 +19,6 @@ export default function Login(props) {
       .then(res => {
         console.log(res.data);
         sessionStorage.setItem('login', 'login');
-        // window.location = '/';
       })
       .catch(err => {
         setFailed(true);
