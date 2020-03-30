@@ -6,14 +6,13 @@ export default class CreateMerch extends Component {
     super(props);
 
     this.onChangeTitle = this.onChangeTitle.bind(this);
+    this.onChangePrice = this.onChangePrice.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
 
     this.state = {
-      title: ''
+      title: '',
+      price: 0.0
     }
-  }
-
-  componentDidMount() {
   }
 
   onChangeTitle(e) {
@@ -22,11 +21,18 @@ export default class CreateMerch extends Component {
     })
   }
 
+  onChangePrice(e) {
+    this.setState({
+      price: e.target.value
+    })
+  }
+
   onSubmit(e) {
     e.preventDefault();
 
     const merch = {
-      title: this.state.title
+      title: this.state.title,
+      price: this.state.price
     }
 
     console.log(merch);
@@ -44,11 +50,21 @@ export default class CreateMerch extends Component {
       <form onSubmit={this.onSubmit}>
         <div className="form-group">
           <label>Title: </label>
-          <input  type="text"
+          <input type="text"
               required
               className="form-control"
               value={this.state.title}
               onChange={this.onChangeTitle}
+              />
+        </div>
+
+        <div className="form-group">
+          <label>Price: </label>
+          <input type="number"
+              required
+              className="form-control"
+              value={this.state.price}
+              onChange={this.onChangePrice}
               />
         </div>
 

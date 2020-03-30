@@ -32,21 +32,23 @@ export default function Login(props) {
       }
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="email">email</label>
+          <label htmlFor="email" className="sr-only">email</label>
           <input id="email" type="email"
               className="form-control"
               value={email}
               required
               autoFocus
               onChange={e => setEmail(e.target.value)}
+              placeholder="Email"
               />
         </div>
         <div className="form-group">
-          <label htmlFor="password">password</label>
+          <label htmlFor="password" className="sr-only">password</label>
           <input id="password" type="password"
               className="form-control"
               required
               onChange={e => setPassword(e.target.value)}
+              placeholder="Password"
               />
         </div>
 

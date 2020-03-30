@@ -22,7 +22,7 @@ export default function Header(props) {
           </div>
 
           <a className="nav-item nav-link" href="/text.html">Test HTML</a>
-          <Link to="/" className="nav-item nav-link">Link</Link>
+          <Link to="/create" className="nav-item nav-link">Create</Link>
           <a className="nav-item nav-link" href="/">Link</a>
           <a className="nav-item nav-link" href="/">Disabled</a>
         </div>

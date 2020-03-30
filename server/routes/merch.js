@@ -8,11 +8,10 @@ router.route('/').get((req, res) => {
 });
 
 router.route('/').post((req, res) => {
-  const newTitle = req.body.title;
-  console.log(req.body);
 
   const newMerch = new Merch({
-    title: newTitle
+    title: req.body.title,
+    price: req.body.price
   });
 
   newMerch.save()

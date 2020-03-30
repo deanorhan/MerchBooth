@@ -18,7 +18,7 @@ export default function Navbar() {
       </button>
 
       <div id="navbarNav" className="collapse navbar-collapse">
-        <form className="position-relative w-100 mx-lg-3" action="/search" role="search">
+        <form className="position-relative w-100 mx-lg-3" action="/merch" role="search">
           <i className="fas fa-search"  style={searchIcon}></i>
           <input type="search" className="form-control mr-sm-2" style={{paddingLeft: '2rem'}} name="query" placeholder="Search" aria-label="Search" />
         </form>
