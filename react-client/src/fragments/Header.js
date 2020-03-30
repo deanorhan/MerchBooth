@@ -6,11 +6,13 @@ import Navbar from '../components/navbar';
 export default function Header(props) {
   return (
     <header>
-      <div className="container bg-info">
-        <Navbar/>
+      <div className="bg-info">
+        <div className="container py-1">
+          <Navbar/>
+        </div>
       </div>
 
-      <div className="container">
+      <div className="container py-2">
         <div className="nav">
           <div className="dropdown">
             <a className="nav-link dropdown-toggle" data-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>

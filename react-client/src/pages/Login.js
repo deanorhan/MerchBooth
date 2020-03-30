@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 export default function Login(props) {
+  document.title = 'Login | Merch Booth';
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [failed, setFailed] = useState(false);
@@ -26,11 +28,13 @@ export default function Login(props) {
   };
 
   return (
-    <div>
+    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}>
       { failed &&
           <div className="alert alert-danger" role="alert">you fucked up</div>
       }
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ width: '400px'}}>
+        <h1 className="text-center" style={{ marginBottom: '1rem' }}>Login</h1>
+
         <div className="form-group">
           <label htmlFor="email" className="sr-only">email</label>
           <input id="email" type="email"
@@ -53,7 +57,7 @@ export default function Login(props) {
         </div>
 
         <div className="form-group">
-          <input type="submit" value="Login" className="btn btn-primary" />
+          <input type="submit" value="Login" className="btn btn-block btn-primary" />
         </div>
       </form>
     </div>
