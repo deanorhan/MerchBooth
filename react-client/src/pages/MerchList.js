@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { PropTypes } from 'prop-types';
 import axios from 'axios';
 
 const imgUrl = "https://res.cloudinary.com/teepublic/image/private/s--0rDnt43t--/t_Preview/b_rgb:191919,c_limit,f_auto,h_313,q_90,w_313/v1543846349/production/designs/3643578_0";
@@ -12,6 +13,13 @@ const Merch = props => (
     <div>{props.merch.price}</div>
   </div>
 );
+
+Merch.propTypes = {
+  merch: PropTypes.shape({
+    title: PropTypes.string,
+    price: PropTypes.number
+  })
+};
 
 export default function MerchList() {
   const [merchlist, setMerchlist] = useState([]);

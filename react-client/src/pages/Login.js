@@ -28,11 +28,11 @@ export default function Login() {
   }
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}>
+    <div className="login-container">
       { failed &&
           <div className="alert alert-danger" role="alert">you fucked up</div>
       }
-      <form onSubmit={handleSubmit} style={{ width: '400px'}}>
+      <form className="login-form" onSubmit={handleSubmit}>
         <h1 className="text-center" style={{ marginBottom: '1rem' }}>Login</h1>
 
         <div className="form-group">

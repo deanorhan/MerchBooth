@@ -1,15 +1,15 @@
 import React from 'react';
 
+function copyYearRange() {
+  const startYear = 2020;
+  const currentYear = new Date().getFullYear();
+
+  if (startYear === currentYear) return startYear;
+
+  return startYear + ' - ' + currentYear;
+}
+
 export default function Footer() {
-  function copyYearRange() {
-    const startYear = 2020;
-    const currentYear = new Date().getFullYear();
-
-    if (startYear === currentYear) return startYear;
-
-    return startYear + ' - ' + currentYear;
-  }
-
   return (
     <footer className="mt-3 py-3 bg-light">
       <div className="container">

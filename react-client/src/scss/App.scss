@@ -1,3 +1,13 @@
 @import './variables';
 
-@import 'Bootstrap';
+@import './Bootstrap';
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.login-form {
+    width: 400px;
+}
