@@ -13,7 +13,7 @@ const Merch = props => (
   </div>
 );
 
-export default function MerchList(props) {
+export default function MerchList() {
   const [merchlist, setMerchlist] = useState([]);
 
   useEffect(() => {
@@ -31,11 +31,11 @@ export default function MerchList(props) {
     return merchlist.map(currentmerch => {
       return <Merch merch={currentmerch} key={currentmerch._id}/>;
     })
-  };
+  }
 
   return (
     <div className="row">
       { merchList() }
     </div>
   );
-};
+}

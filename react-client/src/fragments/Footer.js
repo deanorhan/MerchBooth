@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Footer(props) {
+export default function Footer() {
   function copyYearRange() {
     const startYear = 2020;
     const currentYear = new Date().getFullYear();

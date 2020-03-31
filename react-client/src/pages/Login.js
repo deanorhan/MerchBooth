@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-export default function Login(props) {
+export default function Login() {
   document.title = 'Login | Merch Booth';
 
   const [email, setEmail] = useState('');
@@ -22,10 +22,10 @@ export default function Login(props) {
         console.log(res.data);
         sessionStorage.setItem('login', 'login');
       })
-      .catch(err => {
+      .catch(() => {
         setFailed(true);
       });
-  };
+  }
 
   return (
     <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}>
@@ -62,4 +62,4 @@ export default function Login(props) {
       </form>
     </div>
   );
-};
+}

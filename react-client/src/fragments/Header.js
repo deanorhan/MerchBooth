@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Navbar from '../components/navbar';
 
-export default function Header(props) {
+export default function Header() {
   return (
     <header>
       <div className="bg-info">
