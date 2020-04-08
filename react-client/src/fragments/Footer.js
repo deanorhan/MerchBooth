@@ -17,7 +17,7 @@ export default function Footer() {
           <div>About</div>
         </div>
 
-        <div className="small">&copy; Merch Booth {copyYearRange()}</div>
+        <div className="small">&copy; Merch Booth { copyYearRange() }</div>
       </div>
     </footer>
   );

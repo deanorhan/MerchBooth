@@ -23,7 +23,6 @@ export default function Header() {
             </div>
           </div>
 
-          <a className="nav-item nav-link" href="/text.html">Test HTML</a>
           <Link to="/create" className="nav-item nav-link">Create</Link>
           <a className="nav-item nav-link" href="/">Link</a>
           <a className="nav-item nav-link" href="/">Disabled</a>

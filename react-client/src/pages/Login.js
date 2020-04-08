@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
+import './Login.module.scss';
+
 export default function Login() {
   document.title = 'Login | Merch Booth';
 
@@ -12,12 +14,7 @@ export default function Login() {
     event.preventDefault();
     setFailed(false);
 
-    const user = {
-      email,
-      password
-    };
-
-    axios.post('http://localhost:4000/login', user)
+    axios.post('http://localhost:4000/login', { email, password })
       .then(res => {
         console.log(res.data);
         sessionStorage.setItem('login', 'login');

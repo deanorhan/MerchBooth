@@ -1,7 +1,6 @@
 import React from 'react';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './scss/App.scss'
 
@@ -13,7 +12,7 @@ import Header from './fragments/Header';
 import Footer from './fragments/Footer';
 import Routes from "./Routes";
 
-function App() {
+export default function App() {
   return (
     <React.Fragment>
       <Header />
@@ -26,5 +25,3 @@ function App() {
     </React.Fragment>
   );
 }
-
-export default App;
