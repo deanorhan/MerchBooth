@@ -6,7 +6,6 @@
   "scripts": {
     "server": "npm run start --prefix server",
     "react": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix react-client\"",
-    "angular": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix angular-client\"",
     "devdb": "docker run -d --rm -p 27017:27017 --name mongodb mongo:4.2.3",
     "mongo-connect": "docker exec -it mongodb mongo"
   },
